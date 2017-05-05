@@ -16,7 +16,7 @@
 
         $http.get(path + "/ppsitems")
             .then(function(response) {
-                $scope.items = JSON.parse(JSON.stringify(response.data));
+                $scope.items = response.data;
                 console.log(response);
             });
 
