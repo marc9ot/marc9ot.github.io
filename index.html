@@ -37,6 +37,7 @@
           <th>Kategorie</th>
           <th>Beschreibung</th>
           <th>Aufwand</th>
+          <th>Aktion</th>
         </tr>
       </thead>
       <tbody>
@@ -45,6 +46,7 @@
           <td>{{item.category}}</td>
           <td>{{item.description}}</td>
           <td>{{item.effort}}</td>
+          <td><a ng-click="dropRow(item)">Löschen</a></td>
         </tr>
       </tbody>
     </table>

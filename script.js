@@ -21,7 +21,6 @@
             });
 
         $scope.addRow = function (Titel, Kategorie, Beschreibung, Aufwand) {
-
             var newItem = {
                 'title': $scope.Titel,
                 'category': $scope.Kategorie,
@@ -40,6 +39,16 @@
                             $scope.Kategorie = "";
                             $scope.Beschreibung = "";
                             $scope.Aufwand = "";
+                        });
+                });
+        };
+        $scope.dropRow = function (item) {
+            $http.delete(path + "/ppsitems" + item.id)
+                .then(function(response) {
+                    console.log(response);
+                    $http.get(path + "/ppsitems")
+                        .then(function(response) {
+                            $scope.items = response.data;
                         });
                 });
         };
