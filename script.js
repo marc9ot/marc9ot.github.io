@@ -44,7 +44,7 @@
         };
         $scope.dropRow = function (item) {
             console.log(item);
-            $http.delete(path + "/ppsitems" + item.id)
+            $http.delete(path + "/ppsitems/" + item._id)
                 .then(function(response) {
                     console.log(response);
                     $http.get(path + "/ppsitems")
