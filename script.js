@@ -29,7 +29,7 @@
                 'effort': $scope.Aufwand
             }
 
-            $http.post(path + "/ppsitems", newItem)
+            $http.post(path + "/ppsitem", newItem)
                 .then(function(response) {
                     console.log(response);
                     $http.get(path + "/ppsitems")
