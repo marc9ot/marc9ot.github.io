@@ -25,7 +25,8 @@
                 'title': $scope.Titel,
                 'category': $scope.Kategorie,
                 'description': $scope.Beschreibung,
-                'effort': $scope.Aufwand
+                'effort': $scope.Aufwand,
+                "user" : $scope.User
             }
 
             $http.post(path + "/ppsitem", newItem)
@@ -39,6 +40,7 @@
                             $scope.Kategorie = "";
                             $scope.Beschreibung = "";
                             $scope.Aufwand = "";
+
                         });
                 });
         };

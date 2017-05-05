@@ -20,14 +20,21 @@
       <input class="margin form-control" type="add" placeholder="Titel" ng-model="Titel" required="true"/>
       <input class="margin form-control input-lg" type="add" placeholder="Beschreibung" ng-model="Beschreibung" required="true"/>
       <input class="margin form-control" type="add" placeholder="Aufwand (1,2,3,5,8,10,13,20)" ng-model="Aufwand" required="true"/>
-      <div>
         <select name="ebene" required="true" class="margin form-control" ng-model="Kategorie" >
           <option value="">Bitte auswählen</option>
           <option value="Systemebene">Systemebene</option>
           <option value="Teilaufgabenebene">Teilaufgabenebene</option>
           <option value="Arbeitspakete">Arbeitspaket</option>
         </select>
-      </div>
+        <select name="ebene" required="true" class="margin form-control" ng-model="Kategorie" >
+          <option value="">Bitte auswählen</option>
+          <option value="OTT">OTT</option>
+          <option value="LAN">LAN</option>
+          <option value="CAS">CAS</option>
+          <option value="FLE">CAS</option>
+          <option value="SAS">CAS</option>
+          <option value="FAR">CAS</option>
+        </select>
       <input class="margin btn btn-primary" type="submit" value="Add to List"/>
     </form>
     <table class="table" ng-hide="!true">
@@ -37,6 +44,7 @@
           <th>Kategorie</th>
           <th>Beschreibung</th>
           <th>Aufwand</th>
+          <th>User</th>
           <th>Aktion</th>
         </tr>
       </thead>
@@ -46,6 +54,7 @@
           <td>{{item.category}}</td>
           <td>{{item.description}}</td>
           <td>{{item.effort}}</td>
+          <td>{{item.user}}</td>
           <td><a ng-click="dropRow(item)">Löschen</a></td>
         </tr>
       </tbody>
