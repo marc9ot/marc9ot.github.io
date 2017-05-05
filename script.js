@@ -16,7 +16,8 @@
 
         $http.get(path + "/ppsitems")
             .then(function(response) {
-                $scope.items = response.data;
+                $scope.items = JSON.parse(JSON.stringify(response.data));
+                console.log(response);
             });
 
         $scope.addRow = function (Titel, Kategorie, Beschreibung, Aufwand) {
