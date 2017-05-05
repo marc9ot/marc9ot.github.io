@@ -22,17 +22,26 @@
 
         $scope.addRow = function (Titel, Kategorie, Beschreibung, Aufwand) {
 
-            $scope.items.push({
-                'Titel': $scope.Titel,
-                'Kategorie': $scope.Kategorie,
-                'Beschreibung': $scope.Beschreibung,
-                'Aufwand': $scope.Aufwand
-            });
+            var newItem = {
+                'title': $scope.Titel,
+                'category': $scope.Kategorie,
+                'description': $scope.Beschreibung,
+                'effort': $scope.Aufwand
+            }
 
-            $scope.Titel = "";
-            $scope.Kategorie = "";
-            $scope.Beschreibung = "";
-            $scope.Aufwand = "";
+            $http.post(path + "/ppsitems", newItem)
+                .then(function(response) {
+                    console.log(response);
+                    $http.get(path + "/ppsitems")
+                        .then(function(response) {
+                            $scope.items = response.data;
+                            console.log(response);
+                            $scope.Titel = "";
+                            $scope.Kategorie = "";
+                            $scope.Beschreibung = "";
+                            $scope.Aufwand = "";
+                        });
+                });
         };
 
     };
