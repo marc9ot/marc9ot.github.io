@@ -28,7 +28,7 @@
                 'description': $scope.Beschreibung,
                 'effort': $scope.Aufwand,
                 "user" : $scope.user
-            }
+            };
 
             $http.post(path + "/ppsitem", newItem)
                 .then(function(response) {
