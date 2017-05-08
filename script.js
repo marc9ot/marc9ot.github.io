@@ -20,7 +20,8 @@
                 console.log(response);
             });
 
-        $scope.addRow = function (Titel, Kategorie, Beschreibung, Aufwand, user) {
+        $scope.addRow = function (Titel, Kategorie, Beschreibung, Aufwand, User) {
+            alert($scope.user);
             var newItem = {
                 'title': $scope.Titel,
                 'category': $scope.Kategorie,
