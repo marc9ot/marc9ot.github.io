@@ -21,7 +21,7 @@
             });
 
         $scope.addRow = function (Titel, Kategorie, Beschreibung, Aufwand, User) {
-            alert($scope.user);
+            alert($scope.Aufwand);
             var newItem = {
                 'title': $scope.Titel,
                 'category': $scope.Kategorie,
