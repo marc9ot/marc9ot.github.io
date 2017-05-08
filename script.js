@@ -27,12 +27,11 @@
                 'category': $scope.Kategorie,
                 'description': $scope.Beschreibung,
                 'effort': $scope.Aufwand,
-                "user" : $scope.user
+                "user" : $scope.User
             };
 
             $http.post(path + "/ppsitem", newItem)
                 .then(function(response) {
-                    console.log(response);
                     $http.get(path + "/ppsitems")
                         .then(function(response) {
                             $scope.items = response.data;
@@ -41,6 +40,7 @@
                             $scope.Kategorie = "";
                             $scope.Beschreibung = "";
                             $scope.Aufwand = "";
+                            $scope.User = "";
 
                         });
                 });

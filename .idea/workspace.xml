@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9afe0-c385-4807-aeb1-b5775b5ddd77" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script.js" afterPath="$PROJECT_DIR$/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,21 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+            <state relative-caret-position="840">
+              <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="49">
+              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -42,14 +43,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>user</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/script.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -171,12 +177,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493983313529</updated>
-      <workItem from="1493983314752" duration="5846000" />
+      <workItem from="1493983314752" duration="6364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5846000" />
+    <option name="totallyTimeSpent" value="6364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -219,18 +225,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="49">
+          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="840">
+          <caret line="56" column="25" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="25" />
           <folding />
         </state>
       </provider>

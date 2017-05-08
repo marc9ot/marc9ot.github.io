@@ -26,7 +26,7 @@
           <option value="Teilaufgabenebene">Teilaufgabenebene</option>
           <option value="Arbeitspakete">Arbeitspaket</option>
         </select>
-        <select name="user" required="true" class="margin form-control" ng-model="User" >
+        <select name="User" required="true" class="margin form-control" ng-model="User" >
           <option value="">Bitte auswählen</option>
           <option value="OTT">OTT</option>
           <option value="LAN">LAN</option>
@@ -54,7 +54,7 @@
           <td>{{item.category}}</td>
           <td>{{item.description}}</td>
           <td>{{item.effort}}</td>
-          <td>{{item.user}}</td>
+          <td>{{item.User}}</td>
           <td><a class="btn btn-danger" ng-click="dropRow(item)">Löschen</a></td>
         </tr>
       </tbody>
