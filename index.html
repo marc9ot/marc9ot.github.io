@@ -19,17 +19,17 @@
   </div>
   <div class="margin container-fluid">
     <form class="marginb" name="addItem" ng-submit="addRow(Titel, Kategorie, Beschreibung, Aufwand, User)">
-      <input class="margin form-control" type="add" placeholder="Titel" ng-model="Titel" required="true"/>
-      <input class="margin form-control input-lg" type="add" placeholder="Beschreibung" ng-model="Beschreibung" required="true"/>
-      <input class="margin form-control" type="add" placeholder="Aufwand (1,2,3,5,8,10,13,20)" ng-model="Aufwand" required="true"/>
+      <input class="margin form-control" type="add" placeholder="Title" ng-model="Titel" required="true"/>
+      <input class="margin form-control input-lg" type="add" placeholder="Description" ng-model="Beschreibung" required="true"/>
+      <input class="margin form-control" type="add" placeholder="Effort (1,2,3,5,8,10,13,20)" ng-model="Aufwand" required="true"/>
         <select name="ebene" required="true" class="margin form-control" ng-model="Kategorie" >
-          <option value="">Bitte auswählen</option>
+          <option value="">Layer</option>
           <option value="Systemebene">Systemebene</option>
           <option value="Teilaufgabenebene">Teilaufgabenebene</option>
           <option value="Arbeitspakete">Arbeitspaket</option>
         </select>
         <select name="User" required="true" class="margin form-control" ng-model="User" >
-          <option value="">Bitte auswählen</option>
+          <option value="">User</option>
           <option value="OTT">OTT</option>
           <option value="LAN">LAN</option>
           <option value="CAS">CAS</option>
@@ -48,12 +48,12 @@
     <table class="table" ng-hide="!true">
       <thead>
         <tr>
-          <th>Titel</th>
-          <th>Kategorie</th>
-          <th>Beschreibung</th>
-          <th>Aufwand</th>
+          <th>Title</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Effort</th>
           <th>User</th>
-          <th>Aktion</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
