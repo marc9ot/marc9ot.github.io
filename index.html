@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
   <script src="bootstrap-editable/js/bootstrap-editable.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
-  <script src="../build/ng-csv.js"></script>
   <script src="script.js"></script>
 </head>
 
@@ -40,8 +38,6 @@
           <option value="FAR">FAR</option>
         </select>
       <input class="margin btn btn-primary" type="submit" value="Add to List"/>
-      <button class="marginb btn btn-primary" type="button" ng-csv="getArray" filename="test.csv">Export</button>
-
     </form>
     <select class ="marginb" ng-model="repoSortOrder">
       <option value="">sort by</option>
