@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module("PSPList", ['ngSanitize', 'ngCsv']);
+    var app = angular.module("PSPList", []);
 
     var MainController = function ($scope, $http) {
 
